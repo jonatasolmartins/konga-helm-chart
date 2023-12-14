@@ -1,4 +1,4 @@
-# Default values for konga.
+# Default values for Konga.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
@@ -77,8 +77,8 @@ ingress:
 
 
 resources: {}
-  # We usually recommend not to specify default resources and to leave this as a conscious
-  # choice for the user. This also increases chances charts run on environments with little
+  # We usually recommend not specifying default resources and leaving this as a conscious
+  # choice for the user. This also increases the chances charts run in environments with little
   # resources, such as Minikube. If you do want to specify resources, uncomment the following
   # lines, adjust them as necessary, and remove the curly braces after 'resources:'.
   # limits:
@@ -105,7 +105,7 @@ migrations:
     consul.hashicorp.com/connect-inject: false
 
 podAnnotations:
-  # These annotations make sure no sidecar contaienr injected into
+  # These annotations make sure no sidecar container is injected into
   # Konga pods
   sidecar.istio.io/inject: false
-  consul.hashicorp.com/connect-inject": false
+  consul.hashicorp.com/connect-inject: false
